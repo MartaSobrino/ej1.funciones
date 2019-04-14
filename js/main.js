@@ -4,8 +4,9 @@ function getRandomNumber(max) {
     return Math.ceil(Math.random() * max);
   }
 
-const random = getRandomNumber(10);
-console.log(random);
+const randomAguacate = getRandomNumber(10);
+const randomPatata = getRandomNumber(10);
+const randomPizza = getRandomNumber(10);
 
 function ten(word, number){
     for(let i=0; i<number; i++){
@@ -13,6 +14,6 @@ function ten(word, number){
     }
 }
 
-ten('aguacate', random);
-ten('patata', random);
-ten('pizza', random);
+ten('aguacate', randomAguacate);
+ten('patata', randomPatata);
+ten('pizza', randomPizza);
