@@ -1,11 +1,18 @@
 'use strict';
 
-function ten(word){
-    for(let i=0; i<10; i++){
-       console.log(word)
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * max);
+  }
+
+const random = getRandomNumber(10);
+console.log(random);
+
+function ten(word, number){
+    for(let i=0; i<number; i++){
+       console.log(word);
     }
 }
 
-ten('aguacate');
-ten('patata');
-ten('pizza');
+ten('aguacate', random);
+ten('patata', random);
+ten('pizza', random);
