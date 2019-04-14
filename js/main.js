@@ -19,12 +19,16 @@
     }
   ];
 
-  function writeMyArray () {
-    for (const item of myWordList){
-      for(let i=0; i<item.total; i++){
-        console.log(item.text);
-      }
-    }
+function writeThis(word, number){
+  for(let i=0; i<number; i++){
+      console.log(word);
   }
+}
 
-writeMyArray();
+function writeMyArray (oneArray) {
+  for(const item of oneArray){
+    writeThis(item.text, item.total);
+  }
+}
+
+writeMyArray(myWordList);
